@@ -1,31 +1,9 @@
-img {
-	border-radius: 50%;
-	background-image: url(wetransfer-1a8064/zsolt.gif);
-	background-size: cover;
-	width: 200px;
-	height: 200px;
-	background-repeat: no-repeat;
-	background-position: center;
-	border-radius: 50%;
+body {
+	margin: 0;
 }
 
-
-#zsolt {
-	background-image: url(wetransfer-1a8064/zsolt.gif);
-	background-size: cover;
-	width: 200px;
-	height: 200px;
-	background-repeat: no-repeat;
-	background-position: center;
+.people {
 	border-radius: 50%;
 	cursor: pointer;
 }
 
-.none {
-	display: none;
-	
-}
-
-.color {
-	display: block;
-}
