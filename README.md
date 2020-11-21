@@ -1,3 +1,3 @@
-# fes_repo
+# fes repo
 
 FES üdvözlő terv
