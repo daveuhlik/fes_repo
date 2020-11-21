@@ -1,11 +1,14 @@
-// let zsolt = document.getElementById('zsolt')
-// let color = document.getElementsByClassName('color')
 
-function hideElement() {
-	let zsolt = document.getElementById('zsolt')
-	if (zsolt.style.display === "block") {
-		zsolt.style.display = "none"
-	} else {
-		zsolt.style.display = "block"
-	}
-}
+
+var myImage = document.querySelector('img');
+
+$(function(){ 
+   myImage.onclick = function() {
+        var mySrc = myImage.getAttribute('src');
+        if(mySrc === 'img/zsolt.gif') {
+            myImage.setAttribute ('src','img/zsolt.png');
+         } else {
+            myImage.setAttribute ('src','img/zsolt.gif');
+         }
+   };
+});
