@@ -1,5 +1,7 @@
 var zsoltImage = document.getElementById('zsolt');
 var anitaImage = document.getElementById('anita');
+var mariannaImage = document.getElementById('marianna');
+var csillaImage = document.getElementById('csilla');
 
 $(function(){ 
    zsoltImage.onclick = function() {
@@ -21,6 +23,28 @@ $(function(){
             anitaImage.setAttribute ('src','img/anita.png');
          } else {
             anitaImage.setAttribute ('src','img/anita.gif');
+         }
+   };
+});
+
+$(function(){ 
+   mariannaImage.onclick = function() {
+        var mySrc = mariannaImage.getAttribute('src');
+        if(mySrc === 'img/marianna.gif') {
+            mariannaImage.setAttribute ('src','img/marianna.png');
+         } else {
+            mariannaImage.setAttribute ('src','img/marianna.gif');
+         }
+   };
+});
+
+$(function(){ 
+   csillaImage.onclick = function() {
+        var mySrc = csillaImage.getAttribute('src');
+        if(mySrc === 'img/csilla.png') {
+            csillaImage.setAttribute ('src','img/csilla.gif');
+         } else {
+            csillaImage.setAttribute ('src','img/csilla.png');
          }
    };
 });
