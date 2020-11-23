@@ -48,9 +48,9 @@ table {
 }
 
 /* =================== End of CSS Reset ============== */
-body * {
+/*body * {
 	border: 1px solid maroon;
-}
+}*/
 
 body {
 	font-family: 'Rochester', cursive;
