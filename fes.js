@@ -41,10 +41,10 @@ $(function(){
 $(function(){ 
    csillaImage.onclick = function() {
         var mySrc = csillaImage.getAttribute('src');
-        if(mySrc === 'img/csilla.png') {
+        if(mySrc === 'img/csilla2.png') {
             csillaImage.setAttribute ('src','img/csilla.gif');
          } else {
-            csillaImage.setAttribute ('src','img/csilla.png');
+            csillaImage.setAttribute ('src','img/csilla2.png');
          }
    };
 });

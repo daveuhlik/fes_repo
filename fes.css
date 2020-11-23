@@ -76,10 +76,12 @@ h1 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 1200px;
-
+	width: 1000px;
 	max-width: 95%;
-	background-color: #7B68EE;
+	height: 50%;
+	background-image: url(img/mountains.svg);
+	background-position: center;
+	background-size: cover;
 	box-shadow: 0px 0px 15px #DAA520;
 }
 
