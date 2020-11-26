@@ -47,13 +47,12 @@ table {
 	border-spacing: 0;
 }
 
-/* =================== End of CSS Reset ============== */
+/* ================
+  end of css reset
+==================*/
+
 /*body * {
 	border: 1px solid maroon;
-}*/
-
-/** {
-	box-sizing: border-box;
 }*/
 
 body {
@@ -62,15 +61,16 @@ body {
 	font-weight: 200;
 	color: #fff;
 	text-align: left;
-	margin-top: 80px;
+	margin-top: 40px;
 }
 
 .container {
 	display: flex;
 	margin: 0 auto;
 	background-color: #00589b;
-	max-width: 90%;
+	/*max-width: 90%;*/
 	width: 950px;
+	
 	height: 620px;
 	justify-content: space-between;
 }
@@ -82,26 +82,24 @@ body {
 .people {
 	border-radius: 50%;
 	cursor: pointer;
-}
-
-img {
 	margin: 4px;
-	width: 130px;
-	height: 130px;
+
 }
 
 .container-circle {
 	position: absolute;
-	margin-top: .4em;
+	height: 600px;
+	width: 600px;
+	margin: .4em;
 	margin-left: 12em;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 600px;
-	height: 600px;
-	background-color: #fff;
-	border-radius: 50%;
+	background-image: url(img/white-circle.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .wrapper {
@@ -109,7 +107,7 @@ img {
 	flex-direction: row;
 	justify-content: center;
 	width: 100%;
-	margin: 1em;
+	/*margin: 1em;*/
 	/*padding: 2em 0;*/
 }
 
@@ -144,8 +142,8 @@ img {
 	letter-spacing: 1px;
 }
 
-.de-text {
-	padding-top: 0;
+.mobile {
+	display: none;
 }
 
 /* ================
@@ -165,21 +163,58 @@ img {
 	height: 65px;
 }
 
-/*.top {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: flex-end;
-}*/
+.shape {
+	shape-outside: circle(50%);
+	float: right;
+}
 
-/*@media screen and (max-width: 1000px) {
+@media (max-width: 500px) {
+	body {
+		font-size: 1rem;
+	}
+
 	.container {
 		flex-direction: column;
-		align-items: center;
+		max-width: 100%;
+		height: 100vh;
+	}
+
+	.container-circle {
+		padding: 0;
+		margin: 5em auto;
+		width: 95%;
+		background-size: 100%;
+	}
+
+	.text-container {
+		margin-top: 1em;
+	}
+
+	.wrapper-top {
+		max-width: 100%;
+	}
+
+	.people {
+		max-width: 85px;
+	}
+
+	.hung-text {
+		display: none;
+	}
+
+	.hung-text-mob {
+		display: block;
+	}
+
+	.mobile {
+		display: flex;
+		flex-direction: row;
 		justify-content: space-between;
 	}
-	.wrapper {
-		flex-direction: column;
+
+	.logo-container {
+		display: none;
 	}
-}*/
+
+}
 
